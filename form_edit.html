@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="AngularHybridUI">
+    <title ng-bind="'AngularHybridUI - ' + $root.title" class="ng-binding">AngularHybridUI - Home</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="HybridUI.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="page_chat" cz-shortcut-listen="true">
+    <div class="container">
+        <div class="row totop" ng-class="slide">
+            <div data-ng-view="" id="ng-view" class="slide-animation view ng-scope">
+                <div class="col-md-12 hidden-xs ng-scope"> &nbsp;</div>
+                <div class="hybrid_topbar background_primary ng-scope">
+                    <span class="hybrid_topbar_title">Form (edit)</span>
+                    <span class="hybrid_topbar_link hybrid_topbar_link_left"></span>
+                    <span class="hybrid_topbar_link hybrid_topbar_link_right">
+                        <a href="form_edit.html"> Edit</a>
+                    </span>
+                </div>
+                <div class="hybrid_tabbar hybrid_tabbar_bottom ng-scope">
+                    <div class="hybrid_tabbar_container">
+                        <a href="list.html" class="hybrid_tabbar_button  col-xs-3">
+                            <div class="row">
+                                <i class="fa fa-list"></i>
+                                <span class="text">List</span>
+                            </div>
+                        </a>
+                        <a href="chat.html" class="hybrid_tabbar_button   col-xs-3">
+                            <i class="fa fa-comments"></i>
+                            <span class="text">Chat</span>
+                        </a>
+                        <a href="sms.html" class="hybrid_tabbar_button  col-xs-3">
+                            <i class="fa fa-phone"></i>
+                            <span class="text">Sms</span>
+                        </a>
+                        <a href="form.html" class="hybrid_tabbar_button active col-xs-3">
+                            <i class="fa fa-tags"></i>
+                            <span class="text">Form</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hybrid_scroll ng-scope">
+                    <div class="hybrid_form hidden-xs-border">
+                        <div class="hybrid_form_item">
+                            <label class="" for="lastname">Lastname</label>
+                            <!-- ngIf: !edit --><input id="lastname" ng-if="!edit" type="text" placeholder="Lastname" class="ng-scope"><!-- end ngIf: !edit -->
+                            <!-- ngIf: edit -->
+                        </div>
+                        <div class="hybrid_form_item">
+                            <label class="" for="firstname">Firstname</label>
+                            <!-- ngIf: !edit --><input id="firstname" ng-if="!edit" type="text" placeholder="Firstname" class="ng-scope"><!-- end ngIf: !edit -->
+                            <!-- ngIf: edit -->
+                        </div>
+                        <div class="hybrid_form_item">
+                            <label class="" for="phone">Phone</label>
+                            <!-- ngIf: !edit --><input id="phone" ng-if="!edit" type="text" placeholder="Phone" class="ng-scope"><!-- end ngIf: !edit -->
+                            <!-- ngIf: edit -->
+                        </div>
+                        <div class="hybrid_form_item">
+                            <label class="" for="email">Email</label>
+                            <!-- ngIf: !edit --><input id="email" ng-if="!edit" type="text" placeholder="Email" class="ng-scope"><!-- end ngIf: !edit -->
+                            <!-- ngIf: edit -->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar visible-lg-inline-block ng-scope"> sidebar </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
